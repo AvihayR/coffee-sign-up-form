@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grab-A-Coffee</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <article>
+            <div class="logo">
+                <img src="icons8-coffee-beans-50.png" alt="coffee-beans-logo" class="img-logo">
+                <h1 class="logo-heading">Grab-a-Coffee™</h1>
+            </div>
+            <h1>Free coffee alert!</h1>
+            <p>Sign up today and win a fresh coffee for your next visit!</p>
+        </article>
+    </header>
+    <main>
+            <form action="#" method="get" class="sign-up-form">
+                <h2 class="form-header">Let's go!</h2>
+                <p class="form-p">Fill in your information below:</p>
+                <p class="info">Lines marked with an * are required</p>
+                <section>
+                    <div class="name-div">
+                        <input type="text" name="name" id="name" placeholder="John Smith" required>
+                        <label for="name">Full name<span aria-label="required">*</span></label>
+                    </div>
+                    <div class="email-div">
+                        <input type="email" name="user-email" id="email" placeholder="john@mail.com" required>
+                        <label for="email">Email<span aria-label="required">*</span></label>
+                    </div>
+                    <div class="password-placehoder">
+                        <input type="password" name="user-passwd" id="password" placeholder="********">
+                        <label for="password">Password<span aria-label="required">*</span></label>
+                    </div>
+                    <div class="repeat password-placehoder">
+                        <input type="password" name="user-passwd-confirm" id="password-confirm" placeholder="********">
+                        <label for="password-confirm">Confirm password<span aria-label="required">*</span></label>
+                    </div>
+                </section>
+                <section>
+                    <div class="newsletter">
+                        <input type="checkbox" name="newsletter" id="newsletter">
+                        <label for="newsletter" class="info">Subscribe to Grab-a-Coffee™ newsletter</label>
+                    </div>
+                    <div class="send-form-div">
+                        <button type="submit">Sign Up</button>
+                    </div>
+                </section>
+                <em><p class="info">Disclaimer: This is not a real service nor a coffee shop, Please do not use real values!</p></em>
+            </form> 
+    </main>
+    <footer>
+
+    </footer>   
+</body>
+</html>
