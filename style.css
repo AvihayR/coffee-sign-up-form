@@ -1,0 +1,93 @@
+:root{
+    --graphite-bg:#303030;
+    --timber:#6F5E53;
+    --moca: #AB947E;
+    --khaki: #C3A995;
+    --lite-graphite-bg:#505050;
+    --white-stone:#cdcdcd;
+    --br:15px;
+}
+
+body{
+    box-sizing: border-box;
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: var(--graphite-bg);
+    color: var(--white-stone);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    width: 100vw;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.img-logo{
+    width: 2rem;
+    height: auto;
+    margin: 5px;
+}
+
+.logo-heading{
+    color: white;
+}
+
+article>p{
+    color: var(--timber);
+}
+
+h1{
+    color: var(--moca);
+    font-size: 1.5rem;
+}
+
+main{
+    min-width: 40vw;
+    max-height: 80vh;
+    background-image: url(wood-bg.jpg);
+    background-size: 100%;
+    border-radius: var(--br);
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vh 1vw;
+    background-color: rgba(46, 46, 46, 0.504);
+    border-radius: var(--br);
+}
+
+form section{
+    margin-top: 5%;
+}
+
+
+header article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-header{
+    font-size: 2rem;
+    color: var(--moca);
+}
+
+.form-p{
+    font-size: 0.9rem;
+}
+
+.info{
+    font-size: 0.65rem;
+}
