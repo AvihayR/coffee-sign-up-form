@@ -9,53 +9,71 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <article>
+    <div class="top">
+        <header>
             <div class="logo">
                 <img src="icons8-coffee-beans-50.png" alt="coffee-beans-logo" class="img-logo">
                 <h1 class="logo-heading">Grab-a-Coffee™</h1>
             </div>
-            <h1>Free coffee alert!</h1>
-            <p>Sign up today and win a fresh coffee for your next visit!</p>
-        </article>
     </header>
+    <article class="hero">
+        <h1 class="hero-h1">Free coffee alert!</h1>
+        <p class="hero-p">Sign up today, <br> and win a fresh coffee for your next visit!</p>
+    </article>
+    </div>
     <main>
             <form action="#" method="get" class="sign-up-form">
                 <h2 class="form-header">Let's go!</h2>
                 <p class="form-p">Fill in your information below:</p>
-                <p class="info">Lines marked with an * are required</p>
+                <p class="info">Lines marked with an <span class="mark">*</span> are required</p>
                 <section>
-                    <div class="name-div">
-                        <input type="text" name="name" id="name" placeholder="John Smith" required>
-                        <label for="name">Full name<span aria-label="required">*</span></label>
+                    <div class="name-div placeholder">
+                        <input type="text" name="name" id="name" pattern="^[\w]{3,15}[\s]{1,2}[\w]{1,15}$" title="Use both First and Last names, for example: John Doe" placeholder="Full name" required>
+                        <label for="name" class="name-label upper">Full name<span aria-label="required" class="mark">*</span></label>
                     </div>
-                    <div class="email-div">
-                        <input type="email" name="user-email" id="email" placeholder="john@mail.com" required>
-                        <label for="email">Email<span aria-label="required">*</span></label>
+                    <div class="email-div placeholder">
+                        <input type="email" name="user-email" id="email" placeholder="yourmail@mail.com" required>
+                        <label for="email" class="email-label upper">Email<span aria-label="required" class="mark">*</span></label>
                     </div>
-                    <div class="password-placehoder">
-                        <input type="password" name="user-passwd" id="password" placeholder="********">
-                        <label for="password">Password<span aria-label="required">*</span></label>
+                    <div class="password-placehoder placeholder">
+                        <input type="password" name="user-passwd" id="password" placeholder="Strong password" pattern="^(?=.*[\w])(?=.*[!@#$&*]).{8,}$" title="Must be at least 8 characters long, and include at least one special character, For example: Password123!" required>
+                        <label for="password" class="passwd-label upper">Password<span aria-label="required" class="mark">*</span></label>
                     </div>
-                    <div class="repeat password-placehoder">
-                        <input type="password" name="user-passwd-confirm" id="password-confirm" placeholder="********">
-                        <label for="password-confirm">Confirm password<span aria-label="required">*</span></label>
+                    <div class="repeat password-placehoder placeholder">
+                        <input type="password" name="user-passwd-confirm" id="password-confirm" placeholder="Confirm password" required>
+                        <label for="password-confirm" class="confirm-passwd-label upper">Confirm password<span aria-label="required" class="mark">*</span></label>
                     </div>
                 </section>
-                <section>
-                    <div class="newsletter">
+                <label class="bottom-form-controls newsletter-container">
                         <input type="checkbox" name="newsletter" id="newsletter">
-                        <label for="newsletter" class="info">Subscribe to Grab-a-Coffee™ newsletter</label>
+                        <span class="checkmark"></span>
+                        <label for="newsletter" class="news-label">Subscribe to Grab-a-Coffee™ newsletter</label>
                     </div>
+                </label>
                     <div class="send-form-div">
                         <button type="submit">Sign Up</button>
                     </div>
-                </section>
+                
                 <em><p class="info">Disclaimer: This is not a real service nor a coffee shop, Please do not use real values!</p></em>
             </form> 
     </main>
     <footer>
-
+        <p>hello</p>
     </footer>   
+    <script>
+        const userPasswd = document.getElementById('password');
+        const confirmPasswd = document.getElementById('password-confirm');
+        
+        function validatePasswd(){
+            if(userPasswd.value != confirmPasswd.value){
+                confirmPasswd.setCustomValidity("Passwords don't match")
+            }else{
+                confirmPasswd.setCustomValidity('');
+            }
+        }
+
+        userPasswd.onchange = validatePasswd;
+        confirmPasswd.onkeyup = validatePasswd;
+    </script>
 </body>
 </html>
