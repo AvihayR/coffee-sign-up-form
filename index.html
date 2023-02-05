@@ -28,19 +28,19 @@
                 <p class="info">Lines marked with an <span class="mark">*</span> are required</p>
                 <section>
                     <div class="name-div placeholder">
-                        <input type="text" name="name" id="name" pattern="^[\w]{3,15}[\s]{1,2}[\w]{1,15}+$" title="Use both First and Last names, for example: John Doe" placeholder="Full name" required>
+                        <input type="text" name="name" id="name" pattern="^[\w]{3,15}[\s]{1,2}[\w]{1,15}+$" title="Use both First and Last names, for example: John Doe" placeholder="Full name" autocomplete="name" required> 
                         <label for="name" class="name-label upper">Full name<span aria-label="required" class="mark">*</span></label>
                     </div>
                     <div class="email-div placeholder">
-                        <input type="email" name="user-email" id="email" placeholder="yourmail@mail.com" required>
+                        <input type="email" name="user-email" id="email" placeholder="yourmail@mail.com" autocomplete="email" required>
                         <label for="email" class="email-label upper">Email<span aria-label="required" class="mark">*</span></label>
                     </div>
                     <div class="password-placehoder placeholder">
-                        <input type="password" name="user-passwd" id="password" placeholder="Strong password" pattern="^(?=.*[\w])(?=.*[!@#$&*]).{8,}$" title="Must be at least 8 characters long, and include at least one special character, For example: Password123!" required>
+                        <input type="password" name="user-passwd" id="password" placeholder="Strong password" pattern="^(?=.*[\w])(?=.*[!@#$&*]).{8,}$" title="Must be at least 8 characters long, and include at least one special character, For example: Password123!" autocomplete="new-password" required>
                         <label for="password" class="passwd-label upper">Password<span aria-label="required" class="mark">*</span></label>
                     </div>
                     <div class="repeat password-placehoder placeholder">
-                        <input type="password" name="user-passwd-confirm" id="password-confirm" placeholder="Confirm password" required>
+                        <input type="password" name="user-passwd-confirm" id="password-confirm" placeholder="Confirm password" autocomplete="current-password" required>
                         <label for="password-confirm" class="confirm-passwd-label upper">Confirm password<span aria-label="required" class="mark">*</span></label>
                     </div>
                 </section>
