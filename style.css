@@ -1,6 +1,6 @@
 :root{
     --graphite-bg:#303030;
-    --hard-graphite-bg:#2d2d2d;
+    --hard-graphite-bg:#292929;
     --timber:#7c6757fa;
     --hard-timber:#574a41;
     --moca: #AB947E;
@@ -105,7 +105,7 @@ form{
     flex-direction: column;
     flex: 0;
     align-items: center;
-    padding: 2rem 0;
+    padding: 2rem 0 0 0;
     background-color: rgba(46, 46, 46, 0.389);
     border-radius: var(--br);
 }
@@ -306,4 +306,43 @@ input#newsletter:checked ~ .checkmark{
     opacity: 0;
 }
 
+p.disclaimer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 95%;
+    padding: 0 2.5%;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
 
+
+footer{
+    width: 99vw;
+    height: 4rem;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--hard-graphite-bg);
+    padding-top: 0.2rem;
+    color: var(--lite-graphite-bg);
+}
+
+footer>p{
+    font-size:1.1rem;
+    text-shadow: 1px 1px 12px var(--hard-graphite-bg);
+    letter-spacing: 1.5px;
+}
+
+a.credit:link{
+    color: var(--timber);
+    letter-spacing: 0.2px;
+}
+
+a.credit:visited{
+    color: var(--hard-timber);
+}
