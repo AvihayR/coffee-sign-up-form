@@ -91,11 +91,12 @@ h1.hero-h1{
 main{
     min-width: 15rem;
     min-height: 50vh;
-    max-height: 90vh;
+    max-height: 100vh;
     background: url(wood-bg.jpg) no-repeat center center;
     background-size: cover;
     border: 2.5px solid var(--hard-timber);
     border-radius: var(--br);
+    margin-bottom: 15vh;
 }
 
 
@@ -331,9 +332,13 @@ p.disclaimer{
 
 
 footer{
-    width: 99vw;
+    width: 100vw;
     height: 4rem;
-    margin-top: 5vh;
+    margin-top: 7vh;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
