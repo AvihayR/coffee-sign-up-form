@@ -350,8 +350,9 @@ footer{
 
 footer>p{
     font-size:1.1rem;
+    font-size: max(5%, 1rem); 
     text-shadow: 1px 1px 12px var(--hard-graphite-bg);
-    letter-spacing: 1.5px;
+    letter-spacing: 2px;
 }
 
 a.credit:link{
