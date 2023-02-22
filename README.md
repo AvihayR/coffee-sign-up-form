@@ -3,7 +3,7 @@ Check it out live at: https://avihayr.github.io/coffee-sign-up-form/
 
 - Client-side validation ✅,
 - Attention to accessibility 🔍,
-- CSS Styling and basic animations🎨,
+- 100% My own CSS Styling and basic animations🎨,
 - Custom password & Confirm-password regex pattern#️⃣,
 - Labels pop up in input fields after placeholder is not shown e.g when typing 📝.
 
